@@ -190,7 +190,7 @@ Explicit `runtime` always wins. Command-hint detection only fires when `runtime`
 | Key                      | vLLM                       | SGLang                  | llama.cpp            | TRT-LLM               | Atlas                 | Description                       |
 |--------------------------|----------------------------|-------------------------|----------------------|-----------------------|-----------------------|-----------------------------------|
 | `port`                   | `--port`                   | `--port`                | `--port`             | `--port`              | `--port`              | Serve port                        |
-| `host`                   | `--host`                   | `--host`                | `--host`             | `--host`              | `--host`              | Bind address                      |
+| `host`                   | `--host`                   | `--host`                | `--host`             | `--host`              | `--bind`              | Bind address (Atlas: canonical `--bind`, `--host` alias) |
 | `tensor_parallel`        | `-tp`                      | `--tp-size`             | `--split-mode row`   | `--tp_size`           | `--tp-size`           | TP degree (= node count on Spark) |
 | `pipeline_parallel`      | `-pp`                      | `--pp-size`             | `--split-mode layer` | `--pp_size`           | —                     | PP degree                         |
 | `ep_size`                | —                          | `--ep-size`             | —                    | —                     | `--ep-size`           | Expert-parallel degree            |
